@@ -4,8 +4,8 @@
 var table = document.getElementById('pixelCanvas');
 var sizePicker = document.getElementById('sizePicker');
 var color = document.getElementById('colorPicker');
-var height = document.getElementById('inputHeight').value;
 var width = document.getElementById('inputWidth').value;
+var height = document.getElementById('inputHeight').value;
 makeGrid(height, width);
 
 
@@ -14,8 +14,8 @@ sizePicker.addEventListener('click', (event)=> {
     event.preventDefault();
 
     // Choose size
-    var height = document.getElementById('inputHeight').value;
     var width = document.getElementById('inputWidth').value;
+    var height = document.getElementById('inputHeight').value;
     table.firstElementChild.remove();
     makeGrid(height, width);
 
