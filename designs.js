@@ -14,8 +14,8 @@ sizePicker.addEventListener('click', (event)=> {
     event.preventDefault();
 
     // Choose size
-    var width = document.getElementById('inputWidth').value;
     var height = document.getElementById('inputHeight').value;
+    var width = document.getElementById('inputWidth').value;
     table.firstElementChild.remove();
     makeGrid(height, width);
 
@@ -26,9 +26,9 @@ function makeGrid(height, width) {
 
     // Your code goes here!
     // Make a grid
-    for (var q =0; q <= width; q++) {
+    for (var q =0; q <= height; q++) {
         let row = table.insertRow(q);
-        for (var r = 0; r <= height; r++) {
+        for (var r = 0; r <= width; r++) {
             let cell = row.insertCell(r);
             cell.addEventListener('click', (event) => {
                 cell.style.backgroundColor = color.value;
