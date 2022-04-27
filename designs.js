@@ -4,8 +4,8 @@
 var table = document.getElementById('pixelCanvas');
 var sizePicker = document.getElementById('sizePicker');
 var color = document.getElementById('colorPicker');
-var width = document.getElementById('inputWidth').value;
 var height = document.getElementById('inputHeight').value;
+var width = document.getElementById('inputWidth').value;
 makeGrid(height, width);
 
 
