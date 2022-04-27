@@ -10,7 +10,7 @@ makeGrid(height, width);
 
 
 //Adding an event lsitener
-sizePicker.addEventListener('click', (event)=> {
+sizePicker.addEventListener('submit', (event)=> {
     event.preventDefault();
 
     // Choose size
