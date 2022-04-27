@@ -10,7 +10,7 @@ makeGrid(height, width);
 
 
 //Adding an event lsitener
-sizePicker.addEventListener('submit', (event)=> {
+sizePicker.addEventListener('click', (event)=> {
     event.preventDefault();
 
     // Choose size
@@ -26,9 +26,9 @@ function makeGrid(height, width) {
 
     // Your code goes here!
     // Make a grid
-    for (var q =0; q <= height; q++) {
+    for (var q =0; q < height; q++) {
         let row = table.insertRow(q);
-        for (var r = 0; r <= width; r++) {
+        for (var r = 0; r < width; r++) {
             let cell = row.insertCell(r);
             cell.addEventListener('click', (event) => {
                 cell.style.backgroundColor = color.value;
